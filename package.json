@@ -1,0 +1,22 @@
+{
+  "name": "new-portfolio",
+  "version": "1.0.0",
+  "description": "portfolio website",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhernandez-11/my-portfolio.git"
+  },
+  "author": "Jose L Hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhernandez-11/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/jhernandez-11/my-portfolio#readme",
+  "devDependencies": {
+    "vite": "^4.5.0"
+  }
+}

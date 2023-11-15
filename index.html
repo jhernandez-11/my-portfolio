@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Hernandez Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/public/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+    <header class="main-header retro-header">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="about-section">
+            <div class="retro-header" style="background-color: #0035D5;">
+                <h1 class="animated-header">Welcome to My Portfolio</h1>
+            </div>
+            <p style="margin-top: 1.5rem;">Welcome to my portfolio. As a entry level Data Analyst, I specialize in turning data into actionable insights. Proficient in SQL and Python, I excel in developing comprehensive data models and robust analytics solutions. My course at IBM has taught me in enhancing data-driven decision-making, gaining skills to increase operational efficiency.
+                I approach data analysis with a detail-oriented and problem-solving mindset, ensuring accuracy and relevance in every project. I am committed to continuous learning, recently completing a certification in Advanced Data Analytics from IBM.
+                I'm passionate about the power of data in storytelling and decision-making, and I enjoy exploring the intersection of data and arts.</p>
+            <div class="bar"></div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <h2>My Work</h2>
+            <div class="portfolio-grid">
+                <!-- Portfolio item 1 -->
+                <div class="portfolio-item">
+                    <img src="project1.jpg" alt="Project 1" class="portfolio-image">
+                    <div class="portfolio-description">
+                        <h3>Project Title 1</h3>
+                        <p>This project involved...</p>
+                    </div>
+                </div>
+                <!-- Portfolio item 2 and more can be added similarly -->
+            </div>
+        </section>
+
+        <section id="resume" class="resume-section">
+            <h2>Resume</h2>
+            <p>Explore my professional journey.</p>
+            <p class="resume-content">
+                <iframe class="resume" src="/public/data_resume.pdf" frameborder="0"></iframe>
+                <a href="/public/data_resume.pdf" class="resume-download" target="_blank">Download Resume</a>
+            </p>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Get in Touch</h2>
+            <p>I am always open to discussing data and analytics. Reach out to me!</p>
+            <form action="submit-form.php" method="post" class="contact-form">
+                <!-- Example contact form fields -->
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Your Email">
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2023 Jose Hernandez. All rights reserved.</p>
+        <div class="social-links">
+            <!-- Social media icons/links -->
+            <a href="https://www.linkedin.com/in/jhernandez-11/" target="_blank">LinkedIn</a> | <a href="https://profile.indeed.com/p/joseh-n78f76g" target="_blank">Indeed</a> | <a href="#">GitHub</a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+      
+</body>
+</html>
