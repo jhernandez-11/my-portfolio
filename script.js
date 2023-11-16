@@ -8,7 +8,7 @@ function dataAnime() {
     { group: "B", variable: "1", value: 9.3 },
     { group: "B", variable: "2", value: 20.1 },
     { group: "C", variable: "1", value: 30.0 },
-    { group: "C", variable: "2", value: 2.1 },
+    { group: "C", variable: "2", value: 5.1 },
     { group: "D", variable: "1", value: 24.6 },
     { group: "D", variable: "2", value: 9.9 }
     // ... more data
@@ -46,8 +46,8 @@ svg.append("g")
 
 // Build color scale
 const myColor = d3.scaleSequential()
-    .interpolator(d3.interpolateInferno)
-    .domain([1, 100]);
+    .interpolator(d3.interpolateBlues)
+    .domain([d3.min(data, d => d.value), d3.max(data, d => d.value)]);
 
 // Create a tooltip
 const tooltip = d3.select("body")
